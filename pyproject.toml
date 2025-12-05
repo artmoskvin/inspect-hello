@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["intercode"]
+
+[project]
+name = "inspect-hello"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.75.0",
+    "backoff>=2.2.1",
+    "datasets>=4.4.1",
+    "google-genai>=1.52.0",
+    "inspect-ai>=0.3.151",
+    "inspect-evals>=0.3.102",
+    "openai>=2.8.1",
+]
